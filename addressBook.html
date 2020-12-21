@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Book</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Address Book</h1>
+      <table>
+        <colgroup>
+          <col id="name" />
+          <col id="email" />
+          <col id="dob" />
+        </colgroup>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Age</td>
+          </tr>
+        </thead>
+        <tbody id="addressBookRows"></tbody>
+      </table>
+      <div style="margin-top: 1rem" id="editDiv"></div>
+    </div>
+
+    <div>
+      <h3>Add New Contact</h3>
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="nameInput" />
+
+        <label for="email">Email</label>
+        <input type="email" id="emailInput" />
+
+        <label for="age">Age</label>
+        <input type="number" id="ageInput" />
+        <button type="submit" id="submitForm">Submit</button>
+      </form>
+    </div>
+
+    <script src="addressBook.js"></script>
+  </body>
+</html>

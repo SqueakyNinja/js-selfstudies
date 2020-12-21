@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="nameInput">Name</label>
+      <input type="text" name="nameInput" id="nameInput" /><br />
+
+      <label for="passwordInput">Password</label>
+      <input type="password" name="passwordInput" id="passwordInput" /><br />
+
+      <label for="yobInput">Year of birth</label>
+      <input
+        type="date"
+        name="yobInput"
+        id="yobInput"
+        value="1996-02-16"
+      /><br />
+
+      <label for="emailInput">Email</label>
+      <input type="email" name="emailInput" id=emailInput" /><br />
+
+      <label for="presentationInput">Personal presentation</label>
+      <input
+        type="textarea"
+        name="presentationInput"
+        id="presentationInput"
+      /><br />
+
+      <label for="colorInput">Favourite color</label>
+      <input type="color" name="colorInput" id="colorInput" /><br />
+
+      <label for="dayInput">Favourite Weekday</label>
+      <select name="dayInput" id="dayInput">
+        <option value="monday" disabled selected hidden>Choose a day</option>
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+      </select>
+
+      <label for="MacInput">Mac</label>
+      <input type="radio" name="macPcInput" id="macInput" />
+      <label for="PCInput">PC</label>
+      <input type="radio" name="macPcInput" id="PCInput" />
+
+      <br />
+      <label for="tvInput">TV Shows you have seen</label><br />
+      <input type="checkbox" name="tvInput" value="friends" id="friends" />
+      <label for="friends">Friends</label><br />
+      <input type="checkbox" name="tvInput" value="chuck" id="chuck" />
+      <label for="chuck">Chuck</label><br />
+      <input
+        type="checkbox"
+        name="parksAndRec"
+        value="parksAndRec"
+        id="parksAndRec"
+      />
+      <label for="parksAndRec">Parks and Recreation</label><br />
+
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+    <script src="forms.js"></script>
+  </body>
+</html>
