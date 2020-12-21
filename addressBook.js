@@ -304,7 +304,6 @@ function setNewRow(name, email, age) {
   }
 
   let newEmail = document.createElement("td");
-
   if (email) {
     newEmail.innerHTML = email;
   } else {
