@@ -19,9 +19,9 @@ Antal tärningsvärden
 */
 
 class Die {
-  constructor() {
+  constructor(id) {
     this.value = this.getNewValue();
-    // this.id = id;
+    this.id = id;
   }
 
   throw() {
@@ -37,6 +37,7 @@ class Dice {
   constructor(size) {
     this.dice = [];
     this.dice_values = new Array(7).fill(0);
+
     for (let i = 0; i < size; i++) {
       this.dice.push(new Die("dice_" + (i + 1)));
     }
@@ -72,7 +73,7 @@ class Dice {
 
 let dice = new Dice(5);
 
-for (let i = 1; i <= 5; i++) {
+for (let i = 1; i < 6; i++) {
   dice.throw(); // Get new dice values
   console.log("Omgång " + i);
   console.log("Tärningsvärden");
