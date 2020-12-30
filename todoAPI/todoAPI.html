@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Todo-list</h1>
+
+      <div id="addressBookRows"></div>
+
+      <div style="margin-top: 1rem" id="editDiv"></div>
+    </div>
+
+    <div>
+      <h3>Add New Contact</h3>
+      <form action="">
+        <label for="userIdInput">User ID</label>
+        <input type="text" id="userIdInput" />
+
+        <label for="titleInput">title</label>
+        <input type="text" id="titleInput" />
+
+        <label for="completedInput">completed</label>
+        <input type="checkbox" id="completedInput" />
+
+        <button type="submit" id="submitForm">Submit</button>
+      </form>
+    </div>
+
+    <script src="todoAPI.js"></script>
+  </body>
+</html>
